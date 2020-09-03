@@ -367,7 +367,7 @@ function transit(){
     document.getElementById("popcontainer").style.top="0.5mm";
     document.getElementById("popcontainer").style.opacity="1";
     document.getElementById("next").style.backgroundColor="#3a86ff";
-    document.getElementById("next").innerHTML="Nexxt >";
+    document.getElementById("next").innerHTML="Next >";
     document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
     document.getElementById("previous").style.backgroundColor="#a3b6db";
     document.getElementById("clicon").style.opacity="1";
