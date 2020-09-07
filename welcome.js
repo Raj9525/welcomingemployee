@@ -431,8 +431,10 @@ function checking(){
 }
 
 function transit(){
-  document.getElementById("uname").style.left="0%"
-  document.getElementById("lab").style.right="0%"
+  document.getElementById("dontshowcheckbox").style.opacity="1";
+  document.getElementById("uname").style.opacity="1";
+  document.getElementById("uname").style.left="0%";
+  document.getElementById("lab").style.right="0%";
     document.getElementById("popcontainer").style.top="0mm";
     document.getElementById("popcontainer").style.opacity="1";
     document.getElementById("next").style.backgroundColor="#3a86ff";

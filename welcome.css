@@ -2,7 +2,7 @@
 #clicon{
     position: absolute;
     right: 0%;
-    top: 0.5%;
+    top: -5.8mm;
     background-color: red;
     color: white;
     border: none;
@@ -58,7 +58,7 @@
 #popcontrol{
     position: absolute;
     
-    top: 160mm;
+    top: 164mm;
     width: 200mm;
     height: fit-content;
     display: flex;
@@ -184,11 +184,12 @@ border-radius: 30px;
 
 
 #overall{
-    position: absolute;
-    top: 20%;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   
 }
 
 #head{
