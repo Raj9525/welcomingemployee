@@ -350,27 +350,98 @@ else if (step==8){
 
     
     document.getElementById("popcontainer").style.top="-300mm";
+    document.getElementById("popdec").style.transform="scale(0)";
+    document.getElementById("popdec").style.opacity="0";
 }
 console.log(step);
 }
 
+//Checkbox
+
+
+var show=localStorage.getItem("show");
+var checkBox =document.getElementById("check");
+
+
+if(show=="false"){
+  checkBox.checked=true;
+  
+  window.onload = checking;
+  window.onload = loading;
+}
+
+
+function check(){
+
+  
+
+  if( checkBox.checked == true){
+ 
+ alert("From now this instructions window will not be shown while loading. But you can access this window from (i) button");
+ 
+ localStorage.setItem("show","false");
+ var show=localStorage.getItem("show");
+ 
+
+console.log(show);
+
+
+}
+else{
+  alert("From now this instructions window will be shown while loading");
+  localStorage.setItem("show","true");
+}
+}
+
+//Checkbox
+
+function loading(){
+var prename = localStorage.getItem("uname");
+var uName ;
+if (typeof(Storage) == "undefined"||prename==null || prename=="null") {
+  uName = prompt("Please enter your name", "");
+  document.getElementById("uname").innerHTML =
+  "Hello " + uName + "! How are you today?";
+  localStorage.setItem("uname", uName);
+  //localStorage.removeItem("uname");
+}
+
+else if (typeof(Storage) !== "undefined"||prename !== null) {
+
+  
+  document.getElementById("uname").innerHTML =
+    "Hello " + prename + "! How are you today?";
+    //localStorage.removeItem("uname");
+}
+//localStorage.removeItem("uname");
+
+}
 
 function clicon(){
     
     document.getElementById("popcontainer").style.top="-300mm";
     document.getElementById("popcontainer").style.opacity="0";
     document.getElementById("clicon").style.opacity="0";
+    document.getElementById("popdec").style.transform="scale(0)";
+    document.getElementById("popdec").style.opacity="0";
+}
+
+function checking(){
+  
 }
 
 function transit(){
-    
-    document.getElementById("popcontainer").style.top="0.5mm";
+  document.getElementById("uname").style.left="0%"
+  document.getElementById("lab").style.right="0%"
+    document.getElementById("popcontainer").style.top="0mm";
     document.getElementById("popcontainer").style.opacity="1";
     document.getElementById("next").style.backgroundColor="#3a86ff";
     document.getElementById("next").innerHTML="Next >";
     document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
     document.getElementById("previous").style.backgroundColor="#a3b6db";
     document.getElementById("clicon").style.opacity="1";
+    document.getElementById("popdec").style.transform="none";
+    document.getElementById("popdec").style.opacity="1";
     var x = document.getElementsByClassName("dot");
   var i;
   for (i = 0; i < x.length; i++) {
@@ -481,7 +552,7 @@ function preslide(){
     console.log(step);
     }
 
-/*Custome functions*/
+/*Custom functions*/
 
 
 

@@ -2,12 +2,13 @@
 #clicon{
     position: absolute;
     right: 0%;
+    top: 0.5%;
     background-color: red;
     color: white;
     border: none;
     border-radius: 8px;
     opacity: 0;
-    transition: opacity 7s ease-in-out;
+    transition: opacity 2s ease-in-out;
     cursor: pointer;
     padding: none;
 }
@@ -17,18 +18,25 @@
     animation: generate 3s 1 alternate steps(20);
     
 }
-
+#popdec{
+    position: absolute;
+    transform: scale(0,0);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 3s ease-in-out;
+    
+}
 #popcontainer{
     width: 99%;
-    height: 99%;
+    height: 100%;
     position: absolute;
+    top:-300mm;
     display: flex;
-  top:-300mm;
+  align-items: center;
   justify-content: center;
   z-index: 100;
-  
+  background-color: rgba(0, 0, 0, 1);
   opacity: 0;
-  transition: 0.9s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 
@@ -37,14 +45,14 @@
     width: 200mm;
     height: 152mm;
     transition: 1s ease-in-out;
-    animation: trans 0.4s infinite linear;
+    animation: trans 0.4s 3 linear;
 
 }
 
 @keyframes trans{
-    0%{opacity:10}
-    50%{opacity:10}
-    100%{opacity:10}
+    0%{opacity:1}
+    50%{opacity:0}
+    100%{opacity:1}
     }
 
 #popcontrol{
@@ -175,7 +183,13 @@ border-radius: 30px;
 
 
 
-
+#overall{
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+}
 
 #head{
     position: relative;
