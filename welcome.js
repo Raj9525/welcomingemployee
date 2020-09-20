@@ -641,337 +641,345 @@ console.log(pos);
 function ins1920(){
 
   if(pos==1){
-        pos=2;
-        s=1;
-        w=300;
-        h=150;
-        r=50;
-        x=0;
-        y=450;
-        bt=700;
-        br=22;
-
-        
-
-
-
-        document.documentElement.style.setProperty('--x', x + 'px');
-        document.documentElement.style.setProperty('--y', y + 'px');
-        
-        document.documentElement.style.setProperty('--r', r + '%');
-        document.documentElement.style.setProperty('--s', s + 'px');
-
-
-        document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-        document.getElementById("insbanner").style.transform="translate(0,550px)";
-      document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
-    
-
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload a photo&nbsp;&nbsp;&nbsp;";
-        
-    //document.getElementById("big").style.top="-5mm";
-    
-    localStorage.setItem("view","0");
-    
-}
-else if(pos==2){
-    pos=3;
+    pos=2;
     s=1;
     w=300;
-    h=100;
+    h=150;
     r=50;
-    x=90;
-    y=600;
-    bt=820;
+    x=0;
+    y=450;
+    bt=700;
     br=22;
+
+    
+
+
+
     document.documentElement.style.setProperty('--x', x + 'px');
     document.documentElement.style.setProperty('--y', y + 'px');
-   // document.documentElement.style.setProperty('--w', w + 'px');
-   // document.documentElement.style.setProperty('--h', h + 'px');
+    
     document.documentElement.style.setProperty('--r', r + '%');
     document.documentElement.style.setProperty('--s', s + 'px');
 
 
     document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-    document.getElementById("insbanner").style.transform="translate(0,690px)";
+    document.getElementById("insbanner").style.transform="translate(0,550px)";
   document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
-  
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Submit your details&nbsp;&nbsp;&nbsp;";
-    //document.getElementById("big").style.top="-5mm";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload a photo&nbsp;&nbsp;&nbsp;";
+document.getElementById("lef").setAttribute("src", "img/leftfill.svg");
+document.getElementById("step123").innerHTML="2/6";
+
+//document.getElementById("big").style.top="-5mm";
+
+localStorage.setItem("view","0");
+
+}
+else if(pos==2){
+pos=3;
+s=1;
+w=300;
+h=100;
+r=50;
+x=90;
+y=600;
+bt=820;
+br=22;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+// document.documentElement.style.setProperty('--w', w + 'px');
+// document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
+
+
+document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
+document.getElementById("insbanner").style.transform="translate(0,690px)";
+document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
+
+
+
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Submit your details&nbsp;&nbsp;&nbsp;";
+document.getElementById("step123").innerHTML="3/6";
+//document.getElementById("big").style.top="-5mm";
 }
 
 else if(pos==3){
-  pos=4;
-  s=1;
-  w=600;
-  h=600;
-  r=5;
-  x=-750;
-  y=70;
-  bt=600;
-  br=7;
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
-
-
-
-  
-    document.getElementById("insbanner").style.transform="translate(200px,210px)";
-  
-
-
-
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview the details&nbsp;&nbsp;&nbsp;";
-
-  setTimeout(function(){
-
-  
-    s=1;
-    w=500;
-    h=500;
-    r=5;
-    x=-750;
-    y=200;
-    bt=680;
-    br=26;
-    document.documentElement.style.setProperty('--x', x + 'px');
-    document.documentElement.style.setProperty('--y', y + 'px');
-    //document.documentElement.style.setProperty('--w', w + 'px');
-    //document.documentElement.style.setProperty('--h', h + 'px');
-    document.documentElement.style.setProperty('--r', r + '%');
-  
-  
-    
-  
-
-
-  document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-    document.getElementById("insbanner").style.transform="translate(200px,190px)";
-  document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
-    
-  
-  
-    },1000)
-
-  setTimeout(function(){
-
-  
-  s=1;
-  w=500;
-  h=500;
-  r=5;
-  x=-1070;
-  y=300;
-  
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+pos=4;
+s=1;
+w=600;
+h=600;
+r=5;
+x=-750;
+y=70;
+bt=600;
+br=7;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
 
 
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
-  document.getElementById("insbanner").style.transform="translate(-160px,210px)";
+document.getElementById("insbanner").style.transform="translate(200px,210px)";
 
 
 
-  },5000)
 
-  setTimeout(function(){
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview the details&nbsp;&nbsp;&nbsp;";
 
-  
-    s=1;
-    w=500;
-    h=500;
-    r=50;
-    x=-1070;
-    y=250;
-    bt=680;
-    br=26;
-    document.documentElement.style.setProperty('--x', x + 'px');
-    document.documentElement.style.setProperty('--y', y + 'px');
-    //document.documentElement.style.setProperty('--w', w + 'px');
-    //document.documentElement.style.setProperty('--h', h + 'px');
-    document.documentElement.style.setProperty('--r', r + '%');
-  
-  
-    
-  
+document.getElementById("step123").innerHTML="4/6";
+
+setTimeout(function(){
 
 
-  document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-  document.getElementById("insbanner").style.transform="translate(-160px,230px)";
-  document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
-    
-  
-  
-    },6000)
-  //document.getElementById("big").style.top="-5mm";
+s=1;
+w=500;
+h=500;
+r=5;
+x=-750;
+y=200;
+bt=680;
+br=26;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+
+
+
+
+
+
+document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
+document.getElementById("insbanner").style.transform="translate(200px,190px)";
+document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
+
+
+
+},1000)
+
+setTimeout(function(){
+
+
+s=1;
+w=500;
+h=500;
+r=5;
+x=-1070;
+y=300;
+
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
+
+
+
+
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").style.transform="translate(-160px,210px)";
+
+
+
+},4000)
+
+setTimeout(function(){
+
+
+s=1;
+w=500;
+h=500;
+r=50;
+x=-1070;
+y=250;
+bt=680;
+br=26;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+
+
+
+
+
+
+document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
+document.getElementById("insbanner").style.transform="translate(-160px,230px)";
+document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
+
+
+
+},4500)
+//document.getElementById("big").style.top="-5mm";
 }
 
 else if(pos==4){
-  pos=5;
-  s=1;
-  w=350;
-  h=350;
-  r=50;
-  x=-1070;
-  y=80;
-  bt=470;
-  br=29;
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+pos=5;
+s=1;
+w=350;
+h=350;
+r=50;
+x=-1070;
+y=80;
+bt=470;
+br=29;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.getElementById("insbanner").style.fontSize="26px";
 document.getElementById("insbanner").style.transform="translate(-160px,320px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;The photo must have 18mm space above&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;The photo must have 18mm space above&nbsp;&nbsp;&nbsp;";
+
+document.getElementById("step123").innerHTML="5/6";
+
+setTimeout(function(){
 
 
-
-  setTimeout(function(){
-
-  
-  s=1;
-  w=160;
-  h=160;
-  r=50;
-  x=-760;
-  y=650;
-  bt=808;
-  br=60;
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+s=1;
+w=160;
+h=160;
+r=50;
+x=-760;
+y=650;
+bt=808;
+br=60;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
 
-  document.getElementById("insbanner").style.transform="translate(140px,620px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").style.transform="translate(140px,620px)";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
 
 
-  },2000);
-  //document.getElementById("big").style.top="-5mm";
+},2000);
+//document.getElementById("big").style.top="-5mm";
 }
 
 else if(pos==5){
-  pos=6;
-  s=1;
-  w=160;
-  h=160;
-  r=50;
-  x=-590;
-  y=650;
-  bt=800;
-  br=7;
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+pos=6;
+s=1;
+w=160;
+h=160;
+r=50;
+x=-590;
+y=650;
+bt=800;
+br=7;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
 
-  document.getElementById("insbanner").style.transform="translate(300px,620px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").style.transform="translate(300px,620px)";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
 
-  //document.getElementById("big").style.top="-5mm";
+
+
+//document.getElementById("big").style.top="-5mm";
 }
 
 
 else if (pos==6){
-  pos=7;
-  s=1;
-  w=220;
-  h=200;
-  r=50;
-  x=-0;
-  y=730;
-  bt=830;
-  br=17;
-  document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-  //document.documentElement.style.setProperty('--w', w + 'px');
-  //document.documentElement.style.setProperty('--h', h + 'px');
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+pos=7;
+s=1;
+w=220;
+h=200;
+r=50;
+x=-0;
+y=730;
+bt=830;
+br=17;
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+//document.documentElement.style.setProperty('--w', w + 'px');
+//document.documentElement.style.setProperty('--h', h + 'px');
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
 
-  document.getElementById("insbanner").style.transform="translate(20px,730px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 6. Download&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").style.transform="translate(20px,730px)";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 6. Download&nbsp;&nbsp;&nbsp;";
 
+
+document.getElementById("step123").innerHTML="6/6";
 }
 
 else if(pos==7){
-  pos=8;
-  s=1;
-  w=0;
-  h=0;
-  r=50;
-  x=-0;
-  y=750;
-  bt=970;
-  br=-5;
-  
-  
-  document.documentElement.style.setProperty('--r', r + '%');
-  document.documentElement.style.setProperty('--s', s + 'px');
+pos=8;
+s=1;
+w=0;
+h=0;
+r=50;
+x=-0;
+y=750;
+bt=970;
+br=-5;
 
-  
-  
-  
 
-  setTimeout(function (){
-    pos=8;
-    s=1;
-    w=300;
-    h=300;
-    r=50;
-    x=-0;
-    y=750;
-    bt=970;
-    br=-5;
+document.documentElement.style.setProperty('--r', r + '%');
+document.documentElement.style.setProperty('--s', s + 'px');
 
-    document.getElementById("big").style.opacity="0";
+
+
+
+
+setTimeout(function (){
+pos=8;
+s=1;
+w=300;
+h=300;
+r=50;
+x=-0;
+y=750;
+bt=970;
+br=-5;
+
+document.getElementById("big").style.opacity="0";
 document.getElementById("big").style.visibility="hidden";
 document.getElementById("insbanner").style.opacity="0";
 document.getElementById("insbanner").style.visibility="hidden";
-document.getElementById("clickn").style.visibility="hidden";
-document.getElementById("clickn").style.opacity="0";
-document.getElementById("clickp").style.opacity="0";
-document.getElementById("clickp").style.visibility="hidden";
+document.getElementById("clck").style.visibility="hidden";
+document.getElementById("clck").style.opacity="0";
+
 
 
 document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
 //document.documentElement.style.setProperty('--w', w + 'px');
- // document.documentElement.style.setProperty('--h', h + 'px');
+// document.documentElement.style.setProperty('--h', h + 'px');
 
-  document.getElementById("closebtn").style.visibility="hidden";
-  
-  document.getElementById("insbanner").style.transform="translate(-10px,730px)";
+document.getElementById("closebtn").style.visibility="hidden";
+
+document.getElementById("insbanner").style.transform="translate(-10px,730px)";
 
 
-  },200);
-  
+},200);
 
-  localStorage.setItem("view","1");
-  localStorage.setItem("show","false");
+
+localStorage.setItem("view","1");
+localStorage.setItem("show","false");
 
 }
 
