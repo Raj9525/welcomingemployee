@@ -454,7 +454,7 @@ else if(pos==3){
     
   
   
-    },6000)
+    },5000)
   //document.getElementById("big").style.top="-5mm";
 }
 
