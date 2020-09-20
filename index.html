@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="welcome.css">
         <link href='https://fonts.googleapis.com/css?family=Tinos' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <link rel="stylesheet" href="font-awesome.min.css">
 
 <script src="jquery.min.js"></script>
@@ -16,7 +17,12 @@
 </style>
     </head>
 
-    <body id="userbody" onload="transit();loading();">
+    <body id="userbody" >
+
+
+<!----------------------------------->
+
+
         <div id="popcontainer">
         <div id="popdec" >
             
@@ -26,73 +32,149 @@
             <img src="img/1.jpg" id="popupimg"/>
         </div>
         <div id="popcontrol">
-            <button id="previous" onclick=" preslide();"> &lt; Previous </button>
-            <div class="dot" id="dot"></div>
-            <div class="dot" id="dot1"></div>
-            <div class="dot" id="dot2"></div>
-            <div class="dot" id="dot3"></div>
-            <div class="dot" id="dot4"></div>
-            <div class="dot" id="dot5"></div>
-            <div class="dot" id="dot6"></div>
-            <div class="dot" id="dot7"></div>
-        
+            <button id="previous" onclick=" preslide();"> &lt;  </button>
+            
             
            
             <button id="next" onclick=" nxslide();" >Next &gt;</button>
 
             </div>
             <button id="clicon"  onclick="clicon();">X</button>
-            <div id="dontshowcheckbox" style="position:absolute; right: 0%; bottom: -5mm; opacity: 0; transition: opacity 5s ease-in-out; ">
+            <div id="dontshowcheckbox" style="position:absolute; right: 0%; bottom: -5mm; opacity: 0; transition: opacity 5s ease-in-out; "></div>
             
-                <!--<p style="position:relative;color:white;float: left;top: 2%;">Don't show these instructions again</p>-->
+                <p style="position:relative;color:white;float: left;top: 2%;">Don't show these instructions again</p>
                 <label id="lab" style="position:absolute;color: rgb(216, 216, 216); font-family: 'Roboto'; font-size: 12px; background-color: #3a3a3a;border-radius: 4px;border: 1.5px solid #3a3a3a;right: -80mm;text-align: left; width: 52mm;; float: right; opacity: 1; transition: right 2s ease-in-out;" for="check"> Don't show these instructions again!</label><input type="checkbox" name="check" value="check" id="check" style="position: relative; right: 0%;" onload="" onclick="check();">
         </div>
-        <p id="uname" style="position:absolute; top: -11mm; left: -80mm; color: white; font-family: 'Roboto'; font-size: 14px; background-color: #4F8BFF;border-radius: 4px;border: 2.5px solid #4F8BFF; opacity: 0; transition: left 2s ease-in-out, opacity 2s ease-in-out; "> User</p>
+        
             </div>
-        </br>
+      
            
         
-        </div>
+  
         
 
+<!--------------------------------------->
+
+
+<p id="uname" > User</p>
 
 
 
-<div id="overall">
-    <div>
-<div id="head">
-<div id="inhead" style="">
-    <h3 style="float: left;">Welcoming Employee</h3>
+<div id="contofpop">
+    <img id="closebtn" src="img/close.svg" onclick="closebtn()"/>
+    
+    <div id="insbanner">&nbsp;&nbsp;&nbsp;Step 1. Fill the contents&nbsp;&nbsp;&nbsp;</div>
+
+    <div id="big"></div>
+
+    
+    <div id="clck" style="z-index: 500;position:absolute;bottom: 7%;right: 0.28%;width: fit-content;height: 40px; display: flex;align-items: center;justify-content: center;opacity: 0;visibility: hidden;transition: all 1s ease-in-out;">
+        <div id="step123" style="font-family: 'Open Sans';font-size: 1em;color: white;left: -40%;position: absolute;top: 11.5%;">1/6</div>
+        <button id="clickp" onclick="macback();" style="background:transparent;border: none; height: 40px; width: 40px;"><img src="img/left.svg" id="lef"></i>&nbsp;</button>
+    <button id="clickn" onclick="mac();" style="background:transparent;border: none;  height: 40px; width: 40px;"><img src="img/rightfill.svg" id="rig"/>&nbsp;</button>
+
     
 </div>
-<div style="position:relative;float: right;left: 71.5% ;">
+
+        
+  </div>
+
+
+    
+
+
+<!--<div style="position:relative;float: right;left: 71.5% ;">
     <img src="img/YAP.png" style="width: 30px; height: 30px;"/>
     <img id="i" src="img/i.png" onclick="transit();"/>
-</div>
-</div>
-
-<br/>
-<br/>
+</div>-->
 
 
 
 
 
-        <div id="Tbody">
+
+<div style="overflow: hidden;position: fixed; width: 100%; height: 100%;"></div>
+        
 <!--Container-->  
 <!--User Input Text-->
-<div id="input">
-    <div>
-        <h5>Enter your contents below</h5>
-    <textarea name="text"  wrap="soft" maxlength="30" id="welcome" placeholder="welcome [30]" style="resize: none; border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg1('#caf0f8');" onblur="setbg1('white')"></textarea><br/>
-    <textarea name="text"  wrap="soft" maxlength="22" id="name" placeholder="Name of the employee [22]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg2('#caf0f8');" onblur="setbg2('white')"></textarea><br/>
-    <textarea name="text"  wrap="soft" maxlength="45" id="designation" placeholder="Designation [45]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg3('#caf0f8');" onblur="setbg3('white')"></textarea><br/>
-    <textarea name="text"  wrap="soft" maxlength="500" id="content" placeholder="HR's Words [500]" style="resize: none;  border-radius: 4px; width:250px; height: 188px;" title="Edit Text" onfocus=" setbg4('#caf0f8');" onblur="setbg4('white')"></textarea><br/>
-    <textarea inputtype="mail" name="text"  wrap="soft" maxlength="25" id="mail" placeholder="Email Id [25]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg5('#caf0f8');" onblur="setbg5('white')"></textarea><br/>
-    <textarea type="number" name="text"  wrap="soft" maxlength="13" id="mobile" placeholder="Contact number [13]" style="resize: none; border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg6('#caf0f8');" onblur="setbg6('white')"></textarea><br/>
-    <textarea name="text"  wrap="soft" maxlength="160" id="bottom" placeholder="HR's Words [160]" style="resize: none; border-radius: 4px; width:250px; height: 105px;" title="Edit Text" onfocus=" setbg7('#caf0f8');" onblur="setbg7('white')"></textarea><br/>
-    <!--Submit btn-->
-    <button id="submit" type="button" onclick="myFunction1(); myFunction2(); myFunction3(); myFunction4(); myFunction5(); myFunction6(); myFunction7(); " title="Click to place the text content on the background image"><span>Submit&nbsp&nbsp</span><i class="fa fa-caret-right"></i></button>
+<div id="infopanel">
+<div style="opacity:1;height: 79px; width: 100%; background-color: #001DEC; position: absolute; top: 0%; z-index: 7; color: white; justify-content: center; align-items: center; display: flex; font-family: 'Open Sans'; font-weight:bolder; font-size: 20px;">INFORMATION PANEL</div>
+    <div id="txtboxescontainer" style="top:130px; position: absolute;width: 285px;">
+       
+            <div id="txthead" style="top: -41px; height: fit-content;width: fit-content; position: absolute;">
+        <p id="pheader" style=" top: 0px;">Name&nbsp;[22]</p>
+        <p id="pheader" style=" top: 73px;">Designation&nbsp;[45]</p>
+        <p id="pheader" style=" top: 150px;">Email&nbsp;Id&nbsp;[25]</p>
+        <p id="pheader" style=" top: 229px;">Contact&nbsp;number&nbsp;[13]</p> 
+        <p id="pheader" style=" top: 308px;">HR's&nbsp;Words&nbsp;[500]</p>    
+    
+    </div>
+<div id="txtboxes" style="opacity: 1; position: absolute;top: -10px;">
+    <textarea name="text"  wrap="soft" maxlength="22" id="name" placeholder="Rajesh"  style=" display:inline-block; vertical-align:middle;  resize: none;  border-radius: 8px; width:285px; height: 36px; padding-left: 10px; padding-top: 10px; box-sizing: border-box;" title="Edit Text" onfocus=" setbg2('#ececec');" onblur="setbg2('white')"></textarea><br/>
+
+    <textarea name="text"  wrap="soft" maxlength="45" id="designation" placeholder="Ux Designer" style="resize: none;  border-radius: 8px; width:285px; height: 36px;  padding-left: 10px;padding-top: 10px; box-sizing: border-box;" title="Edit Text" onfocus=" setbg3('#ececec');" onblur="setbg3('white')"></textarea><br/>
+
+    <textarea inputtype="mail" name="text"  wrap="soft" maxlength="25" id="mail" placeholder="rajesh@m2p.in" style="resize: none;  border-radius: 8px; width:285px; height: 36px;  padding-left: 10px;padding-top: 10px; box-sizing: border-box;" title="Edit Text" onfocus=" setbg5('#ececec');" onblur="setbg5('white')"></textarea><br/>
+   
+    <textarea type="number" name="text"  wrap="soft" maxlength="13" id="mobile" placeholder="9876543210" onkeyup="checkInput(this)" style="resize: none; border-radius: 8px; width:285px; height: 36px;  padding-left: 10px;padding-top: 10px; box-sizing: border-box;" title="Edit Text" onfocus=" setbg6('#ececec');" onblur="setbg6('white')"></textarea><br/>
+
+    <textarea name="text"  wrap="soft" maxlength="500" id="content" placeholder="Your Message" style="resize: none;  border-radius: 8px; width:285px; height: 188px; padding-left: 10px; padding-top: 12px; padding-right: 10px; box-sizing: border-box;" title="Edit Text" onfocus=" setbg4('#ececec');" onblur="setbg4('white')"></textarea><br/>    
+</div>
+
+</div>
+<div id="browse" >
+
+    <p style="color: #ffffff; opacity: 0.6; font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    ">Browse a file to upload</p>
+<!--Submit btn-->
+<div id="btnUpload" onclick="getFile()"><span>BROWSE</span></div>
+<!-- this is your file input tag, so i hide it!-->
+<!-- i used the onchange event to fire the form submission-->
+<div style='height: 0px;width: 0px; overflow:hidden;'><input id="inpFile" type="file" src="" name="inpFile" id="inpFile" value="upload" onchange="previewFile(this);sub(this)" title="Choose a Photo" /></div>
+<!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+
+
+
+
+<!-- <input type="submit" value='submit' > -->
+
+</div>
+
+
+
+<div id="control">
+
+
+    
+
+    
+
+     <button id="reset" onclick="erase()">RESET</button>  
+
+    
+     <button id="submit" type="button" onclick=" myFunction1();myFunction2(); " title="Click to place the text content on the background image">SUBMIT</button>
+
+
+
+
+    </div>
+
+
+
+
+  
+<div style="height: 79px; width: 100%; background-color: #001DEC; position: absolute; bottom: 0%; z-index: 7; display:flex; align-items: center; justify-content: center; ">
+
+    <button id="btn-Convert-Html2Image" class="download" type="button" onclick="convert();"  title="Download the final artwork"><i style="position: relative; top: 1.5px;"><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.8166 14.4634H15.5882C16.667 14.4616 17.7062 14.0568 18.502 13.3284C19.2977 12.6 19.7926 11.6006 19.8897 10.5262C19.9867 9.4518 19.6788 8.3799 19.0264 7.52075C18.374 6.66159 17.4242 6.07718 16.3631 5.88212C15.9092 4.65393 15.0877 3.5955 14.0106 2.85097C12.9335 2.10644 11.653 1.712 10.3437 1.72135C9.03428 1.73071 7.75962 2.14341 6.69323 2.90325C5.62685 3.66309 4.82058 4.73315 4.38421 5.9677C3.37547 6.24701 2.5022 6.88257 1.92626 7.75656C1.35031 8.63055 1.11075 9.6837 1.25197 10.7208C1.3932 11.758 1.90563 12.7087 2.69429 13.3969C3.48296 14.0851 4.49437 14.464 5.54106 14.4634H10.3412" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M11.0815 11.043V16.908L12.0134 15.9746" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M11.0816 16.9078L10.1514 15.9775" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+        </svg></i><span>&nbsp&nbsp</span>&nbsp;&nbsp;&nbsp;DOWNLOAD</button>
+
+    
 </div>
 </div>
 
@@ -101,8 +183,29 @@
 
 
 
-<div id="base">    
+  <div style="position:absolute; height:100%; width: 75%; background-color: #E8F1FF; display: flex; align-items: center; justify-content: center;background-image: url(img/1.svg);background-repeat: no-repeat;">
+    <div style="position: absolute;background-color: #001DEC ; top: 0%; left: 0%; height: 37%;width: 65px; z-index: 150; border-radius: 0px 0px 70px 0px"></div>
+    <div style="position: absolute;background-color: #001DEC ; bottom: 0%; left: 0%; height: 27%;width: 65px; z-index: 150; border-radius: 0px 70px 0px 0px"></div>
+   
+   <div id="titlecont" style="height: 79px; max-height: 79px; width: 100%; position: absolute; top: 0%; display: flex; display:-webkit-flex; -webkit-justify-content: center; -webkit-align-items: center; align-items: center; justify-content: center;">
+    
+    
+        <h2>WELCOMING EMPLOYEE</h2>
+        
+   
+    <button class="how" id="how" onclick="help();"><i style="top: 1px;position: relative;"> <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.125C6.70304 3.125 3.625 6.20304 3.625 10C3.625 13.797 6.70304 16.875 10.5 16.875C14.297 16.875 17.375 13.797 17.375 10C17.375 6.20304 14.297 3.125 10.5 3.125ZM2.375 10C2.375 5.51269 6.01269 1.875 10.5 1.875C14.9873 1.875 18.625 5.51269 18.625 10C18.625 14.4873 14.9873 18.125 10.5 18.125C6.01269 18.125 2.375 14.4873 2.375 10Z" fill="#001DEC"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.875 6.66675C9.875 6.32157 10.1548 6.04175 10.5 6.04175H10.5083C10.8535 6.04175 11.1333 6.32157 11.1333 6.66675C11.1333 7.01193 10.8535 7.29175 10.5083 7.29175H10.5C10.1548 7.29175 9.875 7.01193 9.875 6.66675Z" fill="#001DEC"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.04199 10C9.04199 9.65482 9.32181 9.375 9.66699 9.375H10.5003C10.8455 9.375 11.1253 9.65482 11.1253 10V12.7083H11.3337C11.6788 12.7083 11.9587 12.9882 11.9587 13.3333C11.9587 13.6785 11.6788 13.9583 11.3337 13.9583H10.5003C10.1551 13.9583 9.87533 13.6785 9.87533 13.3333V10.625H9.66699C9.32181 10.625 9.04199 10.3452 9.04199 10Z" fill="#001DEC"/>
+        </svg> </i>&nbsp;&nbsp;&nbsp;How&nbsp;to</button>
+       
+</div>
+
+
+
 <div  id="container" class="container" >
+
+    
 
 <div style="float: left; height: 121mm;" >
 
@@ -133,14 +236,14 @@
 <!--Inner Texts-->
 <div id="inner">
     <p id=p1>Welcome</p>
-    <p id="p2">Mr. Madhu</p>
-    <p id=p3>CEO</p>
+    <p id="p2">Employee Name</p>
+    <p id=p3>Designation</p>
     <p id=p4 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>
-    <p id=p5>madhu@m2p.in</p>
-    <p id=p6>09876543210</p>
-    <p id=p7>Please join me in welcoming Madhu to our YAP family. Welcome aboard!!!
+    <p id=p5>employee@m2p.in</p>
+    <p id=p6>00 0000 0000</p>
+    <p id=p7>Please join me in welcoming Employee to our YAP family. Welcome aboard!!!
         </p>
     </div>
 <!--Inner Texts-->    
@@ -149,10 +252,27 @@
 
 
 
-
 </div>
 
+<div id="artboardbtns">
 
+    <button id="fix" class="fix" type="button" value="Fix" onclick="anchor();" title="Click to fix the employee's photo on the background"><i style="top:1px;position: relative;" ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4883 6.875C10.8335 6.875 11.1133 7.15482 11.1133 7.5V10.2083H17.9883C18.3335 10.2083 18.6133 10.4882 18.6133 10.8333C18.6133 11.1785 18.3335 11.4583 17.9883 11.4583H17.7531C17.6065 13.1632 16.8636 14.77 15.6443 15.9893C14.2768 17.3568 12.4222 18.125 10.4883 18.125C8.55441 18.125 6.69975 17.3568 5.33229 15.9893C4.11293 14.77 3.37004 13.1632 3.22343 11.4583H2.98828C2.6431 11.4583 2.36328 11.1785 2.36328 10.8333C2.36328 10.4882 2.6431 10.2083 2.98828 10.2083H9.86328V7.5C9.86328 7.15482 10.1431 6.875 10.4883 6.875ZM9.86328 11.4583H4.47901C4.62173 12.831 5.23143 14.1207 6.21618 15.1054C7.20092 16.0902 8.4906 16.6999 9.86328 16.8426V11.4583ZM11.1133 16.8426V11.4583H16.4976C16.3548 12.831 15.7451 14.1207 14.7604 15.1054C13.7756 16.0902 12.486 16.6999 11.1133 16.8426Z" fill="#001DEC"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4883 3.125C9.45275 3.125 8.61328 3.96447 8.61328 5C8.61328 6.03553 9.45275 6.875 10.4883 6.875C11.5238 6.875 12.3633 6.03553 12.3633 5C12.3633 3.96447 11.5238 3.125 10.4883 3.125ZM7.36328 5C7.36328 3.27411 8.76239 1.875 10.4883 1.875C12.2142 1.875 13.6133 3.27411 13.6133 5C13.6133 6.72589 12.2142 8.125 10.4883 8.125C8.76239 8.125 7.36328 6.72589 7.36328 5Z" fill="#001DEC"/>
+        </svg></i><span>&nbsp;&nbsp;&nbsp;Fix</span></button>
+         <button id="fix" class="adjust" type="button" value="Adjust" onclick="refix();" title="Click to adjust again the fixed photo of employee"><i style="position: relative;top: 3px;" ><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.875 5C11.875 4.65482 12.1548 4.375 12.5 4.375H12.5083C12.8535 4.375 13.1333 4.65482 13.1333 5C13.1333 5.34518 12.8535 5.625 12.5083 5.625H12.5C12.1548 5.625 11.875 5.34518 11.875 5Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.125C3.96447 3.125 3.125 3.96447 3.125 5V11.6667C3.125 12.7022 3.96447 13.5417 5 13.5417H15C16.0355 13.5417 16.875 12.7022 16.875 11.6667V5C16.875 3.96447 16.0355 3.125 15 3.125H5ZM1.875 5C1.875 3.27411 3.27411 1.875 5 1.875H15C16.7259 1.875 18.125 3.27411 18.125 5V11.6667C18.125 13.3926 16.7259 14.7917 15 14.7917H5C3.27411 14.7917 1.875 13.3926 1.875 11.6667V5Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.27074 7.94636L2.94194 11.2752C2.69786 11.5192 2.30214 11.5192 2.05806 11.2752C1.81398 11.0311 1.81398 10.6353 2.05806 10.3913L5.39139 7.05794L5.39997 7.04952C5.87147 6.59582 6.45124 6.31665 7.08333 6.31665C7.71542 6.31665 8.2952 6.59582 8.76669 7.04952L8.77527 7.05794L12.1086 10.3913C12.3527 10.6353 12.3527 11.0311 12.1086 11.2752C11.8645 11.5192 11.4688 11.5192 11.2247 11.2752L7.89593 7.94636C7.60874 7.67155 7.32778 7.56665 7.08333 7.56665C6.83889 7.56665 6.55793 7.67155 6.27074 7.94636Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9376 8.77961L11.2754 10.4417C11.0314 10.6858 10.6356 10.6858 10.3916 10.4417C10.1475 10.1977 10.1475 9.80193 10.3916 9.55785L12.0582 7.89119L12.0668 7.88277C12.5383 7.42907 13.1181 7.1499 13.7502 7.1499C14.3823 7.1499 14.962 7.42907 15.4335 7.88277L15.4421 7.89119L17.9421 10.3912C18.1862 10.6353 18.1862 11.031 17.9421 11.2751C17.698 11.5191 17.3023 11.5191 17.0582 11.2751L14.5628 8.77961C14.2756 8.5048 13.9946 8.3999 13.7502 8.3999C13.5057 8.3999 13.2248 8.5048 12.9376 8.77961Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.0415 17.5C6.0415 17.1548 6.32133 16.875 6.6665 16.875H6.67484C7.02002 16.875 7.29984 17.1548 7.29984 17.5C7.29984 17.8452 7.02002 18.125 6.67484 18.125H6.6665C6.32133 18.125 6.0415 17.8452 6.0415 17.5Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 17.5C9.375 17.1548 9.65482 16.875 10 16.875H10.0083C10.3535 16.875 10.6333 17.1548 10.6333 17.5C10.6333 17.8452 10.3535 18.125 10.0083 18.125H10C9.65482 18.125 9.375 17.8452 9.375 17.5Z" fill="#001DEC"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7085 17.5C12.7085 17.1548 12.9883 16.875 13.3335 16.875H13.3418C13.687 16.875 13.9668 17.1548 13.9668 17.5C13.9668 17.8452 13.687 18.125 13.3418 18.125H13.3335C12.9883 18.125 12.7085 17.8452 12.7085 17.5Z" fill="#001DEC"/>
+            </svg></i><span>&nbsp;&nbsp;&nbsp;Adjust</span></button>
+    
+        </div>
+
+</div>
 <!--Interaction-->
 
     
@@ -162,28 +282,22 @@
  </label >-->
  
  
-     <div id="btnUpload" onclick="getFile()"><i class="fa fa-upload"></i><span>&nbsp&nbspUpload</span></div>
-     <!-- this is your file input tag, so i hide it!-->
-     <!-- i used the onchange event to fire the form submission-->
-     <div style='height: 0px;width: 0px; overflow:hidden;'><input id="inpFile" type="file" src="" name="inpFile" id="inpFile" value="upload" onchange="previewFile(this);sub(this)" title="Choose a Photo" /></div>
-     <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
-     <!-- <input type="submit" value='submit' > -->
+     
  
  
  
-     <button id="fix" class="fix" type="button" value="Fix" onclick="view();" title="Click to fix the employee's photo on the background"><i class="fa fa-anchor"></i><span>&nbsp&nbspFix</span></button>
-     <button id="fix" class="adjust" type="button" value="Adjust" onclick="refix();" title="Click to adjust again the fixed photo of employee"><i class="fas fa-tools"></i><span>&nbsp&nbspAdjust</span></button>
+     
      <!--<button id="resize" class="resize" type="button" value="Resize" onclick="resize();" onblur="" title="Click to fix the employee's photo on the background"><span>Resize</span></button>-->
      <!--<button id="btn-Preview-Image" class="preview" type="button" onclick="" value="Generate" title="Click to preview the final image to be downloaded"></i><span class="iconify" data-icon="fa-brands:battle-net"></span>&nbspGenerate</button>-->
      
-     <button id="btn-Convert-Html2Image" class="download" type="button" onclick="convert();"  title="Download the final artwork"><i class="fa fa-download"></i><span>&nbsp&nbsp</span>Download</button>
+     
      
  </div>
  <!--Interaction-->
 
 <!--<button id="zoomin" class="zoomin" style="top: 10mm; position: relative;" onclick="zoom()" >zoomin</button>-->
-</div>
-</div>
+
+
 
 </div>
 
@@ -209,7 +323,7 @@
 
 
 
-
+</div>
 
 <!--Bg input -->
 <script>
