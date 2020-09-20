@@ -454,7 +454,7 @@ else if(pos==3){
     
   
   
-    },4500)
+    },5000)
   //document.getElementById("big").style.top="-5mm";
 }
 
@@ -819,7 +819,7 @@ document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
 
-},4500)
+},5000)
 //document.getElementById("big").style.top="-5mm";
 }
 
