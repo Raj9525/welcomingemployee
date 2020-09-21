@@ -173,7 +173,7 @@ document.documentElement.style.setProperty('--x', x + 'px');
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
        
-localStorage.setItem("show","true")
+//localStorage.setItem("show","true")
 
 var show=localStorage.getItem("show");
 var view=localStorage.getItem("view");
