@@ -8,16 +8,19 @@ window.onload=greetMsg();
 
 function greetMsg(){
 
-  if (time>=0 || time<12){
-      greet="Good Morning";
-  }
-  else if (time>=12 || time<16){
+  
+   if (time>=12 & time<16){
     greet="Good after Noon";
+   // alert("noon");
   }
   else if (time>=16 || time<0){
     greet="Good Evening";
+   // alert("evening");
   }
-
+  else if (time>=0 && time<=11){
+    greet="Good Morning";
+ //   alert("morning");
+}
 
 }
 
@@ -142,6 +145,8 @@ ins();
 }
 //-----------------------------------------------------------------------------------------------------
   function help(){
+
+    if (window.screen.width>1440 & window.innerWidth>1440){
     pos=1;
     x=0;
     y=0;
@@ -149,7 +154,29 @@ ins();
 document.getElementById("insbanner").style.transition= "all 0.3s ease-in-out";
 document.documentElement.style.setProperty('--x', x + 'px');
   document.documentElement.style.setProperty('--y', y + 'px');
-    
+    }
+else if(window.screen.width<=1440 & window.innerWidth<=1440){
+  alert("<=1440");
+ s=0;
+ r=6;
+ x;
+ y; 
+ w=235;
+ h=200;
+ tp=10;
+rt=4.5;
+  pos=1;
+  x=0;
+  y=0;
+  document.documentElement.style.setProperty('--trans', 'all 0.3s ease-in-out');
+document.getElementById("insbanner").style.transition= "all 0.3s ease-in-out";
+document.documentElement.style.setProperty('--x', x + 'px');
+document.documentElement.style.setProperty('--y', y + 'px');
+
+
+
+}
+
     popLoad();
 
 
@@ -196,6 +223,35 @@ var a=1;
 var b=2;
 
 function popLoad(){
+
+  if (window.screen.width>1440 & window.innerWidth>1440){
+    s=0;
+ r=6;
+ x;
+ y; 
+ w=300;
+ h=300;
+ tp=10;
+rt=4.5;
+    
+    }
+else if(window.screen.width<=1440 & window.innerWidth<=1440){
+  s=0;
+  r=6;
+  x;
+  y; 
+  w=235;
+  h=235;
+  tp=10;
+ rt=4.5;
+
+}
+
+
+
+
+
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 1.Fill the contents&nbsp;&nbsp;&nbsp;";
   document.getElementById("lef").setAttribute("src", "img/left.svg");
 setTimeout(function(){
   r=6;
@@ -232,7 +288,7 @@ document.getElementById("closebtn").style.opacity="1";
 setTimeout(function() {
 
   x=0;
-  y=220;  
+  y=223;  
 
   document.documentElement.style.setProperty('--w', w + 'px');
   document.documentElement.style.setProperty('--h', h + 'px');
@@ -242,7 +298,7 @@ setTimeout(function() {
   document.documentElement.style.setProperty('--x', x + 'px');
   document.documentElement.style.setProperty('--y', y + 'px');
   document.documentElement.style.setProperty('--trans', 'all 3s ease-in-out');
-  document.getElementById("insbanner").style.transform="translate(0,220px)";
+  document.getElementById("insbanner").style.transform="translate(0,228px)";
 document.getElementById("insbanner").style.transition= "all 3s ease-in-out";
 document.getElementById("closebtn").style.visibility="visible";
 
@@ -262,14 +318,14 @@ document.getElementById("closebtn").style.visibility="visible";
 //1792*1120
 var pos=1;
 function mac(){
-if (window.screen.width>=1441){
+if (window.screen.width>1440 || window.innerWidth>1440){
 
 ins();
 
 
 }
-else if (window.screen.width<=1440){
-  ins1920();
+else if (window.screen.width<=1440 || window.innerWidth<=1440){
+  ins1440();
 }
 }
 //---------------------------
@@ -628,7 +684,7 @@ console.log(pos);
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
-//_________________________________________________-----------------------____----------__------____-_---______-------____________________-------
+//_________________________________________________-----------------------____----------__------____-_---______-------____________________-------________--_-_--_-_-_-_-_-_--_-_-_--_-_
 
 
 
@@ -638,16 +694,16 @@ console.log(pos);
 
 
 
-function ins1920(){
-
+function ins1440(){
+//alert(window.screen.width);
   if(pos==1){
     pos=2;
     s=1;
-    w=300;
+    w=150;
     h=150;
     r=50;
     x=0;
-    y=450;
+    y=345;
     bt=700;
     br=22;
 
@@ -663,7 +719,7 @@ function ins1920(){
 
 
     document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-    document.getElementById("insbanner").style.transform="translate(0,550px)";
+    document.getElementById("insbanner").style.transform="translate(0,450px)";
   document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -682,8 +738,8 @@ s=1;
 w=300;
 h=100;
 r=50;
-x=90;
-y=600;
+x=80;
+y=420;
 bt=820;
 br=22;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -695,7 +751,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(0,690px)";
+document.getElementById("insbanner").style.transform="translate(0,550px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -711,8 +767,8 @@ s=1;
 w=600;
 h=600;
 r=5;
-x=-750;
-y=70;
+x=-570;
+y=30;
 bt=600;
 br=7;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -725,7 +781,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 
-document.getElementById("insbanner").style.transform="translate(200px,210px)";
+document.getElementById("insbanner").style.transform="translate(-90px,210px)";
 
 
 
@@ -741,7 +797,7 @@ s=1;
 w=500;
 h=500;
 r=5;
-x=-750;
+x=-570;
 y=200;
 bt=680;
 br=26;
@@ -757,7 +813,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(200px,190px)";
+document.getElementById("insbanner").style.transform="translate(-90px,190px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -771,8 +827,8 @@ s=1;
 w=500;
 h=500;
 r=5;
-x=-1070;
-y=300;
+x=-830;
+y=280;
 
 document.documentElement.style.setProperty('--x', x + 'px');
 document.documentElement.style.setProperty('--y', y + 'px');
@@ -785,7 +841,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
-document.getElementById("insbanner").style.transform="translate(-160px,210px)";
+document.getElementById("insbanner").style.transform="translate(-270px,210px)";
 
 
 
@@ -798,8 +854,8 @@ s=1;
 w=500;
 h=500;
 r=50;
-x=-1070;
-y=250;
+x=-830;
+y=200;
 bt=680;
 br=26;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -814,7 +870,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(-160px,230px)";
+document.getElementById("insbanner").style.transform="translate(-250px,230px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -829,8 +885,8 @@ s=1;
 w=350;
 h=350;
 r=50;
-x=-1070;
-y=80;
+x=-830;
+y=70;
 bt=470;
 br=29;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -841,8 +897,8 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.fontSize="26px";
-document.getElementById("insbanner").style.transform="translate(-160px,320px)";
+document.getElementById("insbanner").style.fontSize="19px";
+document.getElementById("insbanner").style.transform="translate(-150px,120px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;The photo must have 18mm space above&nbsp;&nbsp;&nbsp;";
 
 document.getElementById("step123").innerHTML="5/6";
@@ -854,8 +910,8 @@ s=1;
 w=160;
 h=160;
 r=50;
-x=-760;
-y=650;
+x=-590;
+y=500;
 bt=808;
 br=60;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -866,7 +922,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(140px,620px)";
+document.getElementById("insbanner").style.transform="translate(-70px,460px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
 
 
@@ -880,8 +936,8 @@ s=1;
 w=160;
 h=160;
 r=50;
-x=-590;
-y=650;
+x=-450;
+y=500;
 bt=800;
 br=7;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -892,7 +948,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(300px,620px)";
+document.getElementById("insbanner").style.transform="translate(-420px,490px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
 
 
@@ -908,7 +964,7 @@ w=220;
 h=200;
 r=50;
 x=-0;
-y=730;
+y=580;
 bt=830;
 br=17;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -919,7 +975,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(20px,730px)";
+document.getElementById("insbanner").style.transform="translate(0px,580px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 6. Download&nbsp;&nbsp;&nbsp;";
 
 
@@ -996,16 +1052,22 @@ console.log(pos);
 
 
 function macback(){
- // if (window.screen.height>=1120){
-  
-  backins();
-  
-  
-  }
- /* else if (window.screen.height<=1119){
-    backins1920();
-  }
-  }*/
+  if (window.screen.width>1440 & window.innerWidth>1440){
+backins();
+    
+    }
+else if(window.screen.width<=1440 & window.innerWidth<=1440){
+
+  backins1440();
+
+}
+}
+
+
+
+
+
+
   
       function backins(){
   
@@ -1070,62 +1132,60 @@ document.documentElement.style.setProperty('--x', x + 'px');
 
 
 
-  /*
-
-  function backins1920(){
+  function backins1440(){
   
-     if(pos==2){
-          pos=1;
-          w=300;
-          h=300;
-    x=0;
-    y=0;
-    document.documentElement.style.setProperty('--trans', 'all 0.5s ease-in-out');
+    if(pos==2){
+        pos=1;
+        w=300;
+        h=300;
+  x=0;
+  y=0;
+  document.documentElement.style.setProperty('--trans', 'all 0.5s ease-in-out');
 document.getElementById("insbanner").style.transition= "all 0.5s ease-in-out";
 document.documentElement.style.setProperty('--x', x + 'px');
-  document.documentElement.style.setProperty('--y', y + 'px');
-    
-    popLoad();
+document.documentElement.style.setProperty('--y', y + 'px');
+  
+  popLoad();
 
-      
-  }
-  else if(pos==3){
-      pos=1;
-      ins();
-  }
-  
-  else if(pos==4){
-    pos=2;
-   ins();
-  
-  
     
-    //document.getElementById("big").style.top="-5mm";
-  }
-  
-  else if(pos==5){
-    pos=3;
-   ins();
-  }
-  
-  else if(pos==6){
-    pos=4;
-    ins();
-  }
+}
+else if(pos==3){
+    pos=1;
+    ins1440();
+}
 
-  else if(pos==7){
-    pos=5;
-    ins();
-  }
+else if(pos==4){
+  pos=2;
+ ins1440();
+
+
   
-  
-  
-  console.log(pos);
+  //document.getElementById("big").style.top="-5mm";
+}
+
+else if(pos==5){
+  pos=3;
+ ins1440();
+}
+
+else if(pos==6){
+  pos=4;
+  ins1440();
+}
+
+else if(pos==7){
+  pos=5;
+  ins1440();
+}
+
+
+
+console.log(pos);
 
 
 }
 
-*/
+
 
 
 
