@@ -156,7 +156,7 @@ document.documentElement.style.setProperty('--x', x + 'px');
   document.documentElement.style.setProperty('--y', y + 'px');
     }
 else if(window.screen.width<=1440 & window.innerWidth<=1440){
-  alert("<=1440");
+ // alert("<=1440");
  s=0;
  r=6;
  x;
@@ -233,6 +233,13 @@ function popLoad(){
  h=300;
  tp=10;
 rt=4.5;
+
+setTimeout(function (){
+
+  x=0;
+  y=223;  
+
+},1500);
     
     }
 else if(window.screen.width<=1440 & window.innerWidth<=1440){
@@ -245,6 +252,12 @@ else if(window.screen.width<=1440 & window.innerWidth<=1440){
   tp=10;
  rt=4.5;
 
+ setTimeout(function (){
+
+  x=0;
+  y=118;  
+
+},1500);
 }
 
 
@@ -287,8 +300,7 @@ document.getElementById("closebtn").style.opacity="1";
 
 setTimeout(function() {
 
-  x=0;
-  y=223;  
+ 
 
   document.documentElement.style.setProperty('--w', w + 'px');
   document.documentElement.style.setProperty('--h', h + 'px');
@@ -298,7 +310,7 @@ setTimeout(function() {
   document.documentElement.style.setProperty('--x', x + 'px');
   document.documentElement.style.setProperty('--y', y + 'px');
   document.documentElement.style.setProperty('--trans', 'all 3s ease-in-out');
-  document.getElementById("insbanner").style.transform="translate(0,228px)";
+  document.getElementById("insbanner").style.transform="translate(0,180px)";
 document.getElementById("insbanner").style.transition= "all 3s ease-in-out";
 document.getElementById("closebtn").style.visibility="visible";
 
@@ -703,11 +715,11 @@ function ins1440(){
     h=150;
     r=50;
     x=0;
-    y=345;
+    y=270;
     bt=700;
     br=22;
 
-    
+    //alert(window.screen.height);
 
 
 
@@ -719,7 +731,7 @@ function ins1440(){
 
 
     document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-    document.getElementById("insbanner").style.transform="translate(0,450px)";
+    document.getElementById("insbanner").style.transform="translate(0,365px)";
   document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -739,7 +751,7 @@ w=300;
 h=100;
 r=50;
 x=80;
-y=420;
+y=340;
 bt=820;
 br=22;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -751,7 +763,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(0,550px)";
+document.getElementById("insbanner").style.transform="translate(0,430px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -781,7 +793,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 
-document.getElementById("insbanner").style.transform="translate(-90px,210px)";
+document.getElementById("insbanner").style.transform="translate(-90px,100px)";
 
 
 
@@ -798,7 +810,7 @@ w=500;
 h=500;
 r=5;
 x=-570;
-y=200;
+y=120;
 bt=680;
 br=26;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -813,7 +825,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(-90px,190px)";
+document.getElementById("insbanner").style.transform="translate(-90px,140px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -827,8 +839,8 @@ s=1;
 w=500;
 h=500;
 r=5;
-x=-830;
-y=280;
+x=-810;
+y=200;
 
 document.documentElement.style.setProperty('--x', x + 'px');
 document.documentElement.style.setProperty('--y', y + 'px');
@@ -854,8 +866,8 @@ s=1;
 w=500;
 h=500;
 r=50;
-x=-830;
-y=200;
+x=-810;
+y=150;
 bt=680;
 br=26;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -885,8 +897,8 @@ s=1;
 w=350;
 h=350;
 r=50;
-x=-830;
-y=70;
+x=-810;
+y=40;
 bt=470;
 br=29;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -910,8 +922,8 @@ s=1;
 w=160;
 h=160;
 r=50;
-x=-590;
-y=500;
+x=-620;
+y=400;
 bt=808;
 br=60;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -922,7 +934,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(-70px,460px)";
+document.getElementById("insbanner").style.transform="translate(-70px,400px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
 
 
@@ -937,7 +949,7 @@ w=160;
 h=160;
 r=50;
 x=-450;
-y=500;
+y=400;
 bt=800;
 br=7;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -948,7 +960,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(-420px,490px)";
+document.getElementById("insbanner").style.transform="translate(-420px,390px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
 
 
@@ -964,7 +976,7 @@ w=220;
 h=200;
 r=50;
 x=-0;
-y=580;
+y=450;
 bt=830;
 br=17;
 document.documentElement.style.setProperty('--x', x + 'px');
@@ -975,7 +987,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(0px,580px)";
+document.getElementById("insbanner").style.transform="translate(0px,480px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 6. Download&nbsp;&nbsp;&nbsp;";
 
 
