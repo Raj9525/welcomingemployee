@@ -221,21 +221,21 @@ justify-content: center;
     top: 0px;
     }
     .pheader2{
-        top: 57px;
+        top: 47px;
         }
         .pheader3{
-            top: 118px;
+            top: 95px;
             }
             .pheader4{
-                top: 179px;
+                top: 142px;
                 }
                 .pheader5{
-                    top: 241px;
+                    top: 190px;
                     }
     
     
         #txtboxescontainer{
-            top:100px; position: absolute;width: 225px;
+            top:90px; position: absolute;width: 225px;
         }
     
         #txthead{
@@ -279,7 +279,7 @@ justify-content: center;
     #designation{
         position: relative;
         overflow: hidden;
-        top:30px;
+        top:20px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -294,7 +294,7 @@ justify-content: center;
     }
     #content{
         position: relative;
-        top:120px;
+        top:70px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -303,7 +303,7 @@ justify-content: center;
        border: none;
        overflow: hidden;
        outline: none;
-       resize: none;  border-radius: 6px; width:225px; height: 179px; padding-left: 10px; padding-top: 4.5px; padding-right: 10px; box-sizing: border-box;color: #0317A1;
+       resize: none;  border-radius: 6px; width:225px; height: 140px; padding-left: 10px; padding-top: 4.5px; padding-right: 10px; box-sizing: border-box;color: #0317A1;
     }
 
     #content:focus{
@@ -311,7 +311,7 @@ justify-content: center;
     }
     #mail{
         position: relative;
-        top:60px;
+        top:36px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -327,7 +327,7 @@ justify-content: center;
     }
     #mobile{
         position: relative;
-        top:90px;
+        top:53px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -565,6 +565,7 @@ justify-content: center;
 
 
 
+
     #base{
         position: relative;
         left: 2.5mm;
@@ -575,14 +576,17 @@ justify-content: center;
      #container{
         position: absolute;
         
-        max-height:580px;
-        max-width:580px;
-        height: 580px;
-        width: 580px;
+        max-height:530px;
+        max-width:530px;
+        height: 530px;
+        width: 530px;
        float: left;
        
        }
     
+
+
+
     #layer1{
         position: absolute;
         background-image: url("img/BG.png");
@@ -602,7 +606,7 @@ justify-content: center;
      background-image: url("img/madhu.jpg");
      background-position: 50% 50%;
      background-repeat: no-repeat;
-     top:12.5mm;
+     top:12mm;
      left:1.64mm;
      float: left;
      /*animation: shrink 1s 1 alternate steps(20);*/
@@ -610,8 +614,8 @@ justify-content: center;
     
      #layer2{
          z-index: 0;
-        width: 68.8mm;
-        height: 137.5mm;
+        width: 62mm;
+        height: 125mm;
         cursor: grab;
         background-size: cover;
        
@@ -659,11 +663,11 @@ justify-content: center;
      #inner{
     
         position: absolute;
-        left: 71mm;
+        left: 65mm;
        
-        max-width: 65.5mm;
-        min-width: 65.5mm;
-        top: 5mm;
+        max-width: 60mm;
+        min-width: 60mm;
+        top: 3mm;
        }
        
        #p1{
@@ -671,7 +675,7 @@ justify-content: center;
         position: relative;
         top: 5mm;
         left: 0mm;
-        font-size: 16px;
+        font-size: 15px;
         font-family: Tinos;
         font-weight: bold;
         color: white;
@@ -682,7 +686,7 @@ justify-content: center;
         position: relative;
         top: 1mm;
         left: 0mm;
-        font-size: 22px;
+        font-size: 21px;
         font-family: Tinos;
         font-weight: bold;
         color: white;
@@ -693,7 +697,7 @@ justify-content: center;
         position: relative;
         top: -5mm;
         left: 0mm;
-        font-size: 11px;
+        font-size: 10px;
         font-family: Tinos;
         font-weight: bold;
         color: white;
@@ -704,7 +708,7 @@ justify-content: center;
         position: relative;
         top: -3mm;
         left: 0mm;
-        font-size: 14px;
+        font-size: 13px;
         font-family: Tinos;
         font-weight: normal;
         color: #F7C11F;
@@ -715,7 +719,7 @@ justify-content: center;
         position: relative;
         top: -4mm;
         left: 0mm;
-        font-size: 11px;
+        font-size: 10px;
         font-family: Tinos;
         color: #F7C11F;
         text-align: left;
@@ -725,7 +729,7 @@ justify-content: center;
         position: relative;
         top: -6mm;
         left: 0mm;
-        font-size: 11px;
+        font-size: 10px;
         color: #F7C11F;
         font-family: Tinos;
         text-align: left;
@@ -733,9 +737,9 @@ justify-content: center;
        #p7{
         z-index:2 ;
         position: absolute;
-        top: 133mm;
-        left: -48mm;
-        font-size: 12.5px;
+        top: 123.5mm;
+        left: -45mm;
+        font-size: 11.5px;
         
         text-align: center;
         color: white;
@@ -754,8 +758,8 @@ justify-content: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        right: 27.1%;
-        bottom: 5%;
+        right: 29.5%;
+        bottom: 2%;
     }
             
         .fix {
@@ -871,8 +875,8 @@ justify-content: center;
         font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 31px;
-    top: 3px;
+    font-size: 23px;
+    top: -11px;
     color: #3C40C6;
     
     }
@@ -904,7 +908,7 @@ justify-content: center;
         transition: 0.1s ease-in-out;
         
       color: #001DEC;
-      
+      top:14px;
     }
     
     
@@ -2296,6 +2300,7 @@ visibility: hidden;
 ::-webkit-scrollbar-track {
 background:#438bff; 
 opacity: 0;
+visibility: hidden;
 }
 
 /* Handle */
@@ -2311,5 +2316,5 @@ background: linear-gradient(0deg,#3a86ff, #8338ec,#8338ec,#8338ec, #3a86ff);
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background:#4c00ff;
-
+visibility: hidden;
 }
