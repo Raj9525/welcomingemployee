@@ -793,7 +793,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 
-document.getElementById("insbanner").style.transform="translate(-90px,100px)";
+document.getElementById("insbanner").style.transform="translate(90px,100px)";
 
 
 
@@ -825,7 +825,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(-90px,140px)";
+document.getElementById("insbanner").style.transform="translate(90px,140px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -853,7 +853,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
-document.getElementById("insbanner").style.transform="translate(-270px,210px)";
+document.getElementById("insbanner").style.transform="translate(-150px,210px)";
 
 
 
@@ -882,7 +882,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 
 
 document.documentElement.style.setProperty('--trans', 'all 1s ease-in-out');
-document.getElementById("insbanner").style.transform="translate(-250px,230px)";
+document.getElementById("insbanner").style.transform="translate(-130px,230px)";
 document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
@@ -934,7 +934,7 @@ document.documentElement.style.setProperty('--r', r + '%');
 document.documentElement.style.setProperty('--s', s + 'px');
 
 
-document.getElementById("insbanner").style.transform="translate(-70px,400px)";
+document.getElementById("insbanner").style.transform="translate(0px,400px)";
 document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
 
 
