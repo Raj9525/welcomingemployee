@@ -10,7 +10,7 @@ function greetMsg(){
 
   
    if (time>=12 & time<16){
-    greet="Good after Noon";
+    greet="Good Afternoon";
    // alert("noon");
   }
   else if (time>=16 || time<0){
