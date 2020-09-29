@@ -264,7 +264,7 @@ else if(window.screen.width<=1440 & window.innerWidth<=1440){
 
 
 
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 1.Fill the contents&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 1.Fill the content&nbsp;&nbsp;&nbsp;";
   document.getElementById("lef").setAttribute("src", "img/left.svg");
 setTimeout(function(){
   r=6;
@@ -370,7 +370,7 @@ else if (window.screen.width<=1440 || window.innerWidth<=1440){
       document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
     
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload a photo&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload photo&nbsp;&nbsp;&nbsp;";
   document.getElementById("lef").setAttribute("src", "img/leftfill.svg");
   document.getElementById("step123").innerHTML="2/6";
   
@@ -403,7 +403,7 @@ else if(pos==2){
 
   
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Submit your details&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Click Submit&nbsp;&nbsp;&nbsp;";
   document.getElementById("step123").innerHTML="3/6";
     //document.getElementById("big").style.top="-5mm";
 }
@@ -433,7 +433,7 @@ else if(pos==3){
 
 
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview the details&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview your details&nbsp;&nbsp;&nbsp;";
 
   document.getElementById("step123").innerHTML="4/6";
 
@@ -487,7 +487,7 @@ else if(pos==3){
 
 
 
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag to adjust the photo&nbsp;&nbsp;&nbsp;";
   document.getElementById("insbanner").style.transform="translate(-160px,210px)";
 
 
@@ -570,7 +570,7 @@ document.getElementById("insbanner").style.transform="translate(-160px,320px)";
 
 
   document.getElementById("insbanner").style.transform="translate(140px,620px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo in the page&nbsp;&nbsp;&nbsp;";
 
 
   },2000);
@@ -596,7 +596,7 @@ else if(pos==5){
 
 
   document.getElementById("insbanner").style.transform="translate(300px,620px)";
-  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
+  document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again as you need&nbsp;&nbsp;&nbsp;";
 
 
   
@@ -735,7 +735,7 @@ function ins1440(){
   document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload a photo&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 2.Upload photo&nbsp;&nbsp;&nbsp;";
 document.getElementById("lef").setAttribute("src", "img/leftfill.svg");
 document.getElementById("step123").innerHTML="2/6";
 
@@ -768,7 +768,7 @@ document.getElementById("insbanner").style.transition= "all 1s ease-in-out";
 
 
 
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Submit your details&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 3. Click Submit&nbsp;&nbsp;&nbsp;";
 document.getElementById("step123").innerHTML="3/6";
 //document.getElementById("big").style.top="-5mm";
 }
@@ -798,7 +798,7 @@ document.getElementById("insbanner").style.transform="translate(90px,100px)";
 
 
 
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview the details&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Preview your details&nbsp;&nbsp;&nbsp;";
 
 document.getElementById("step123").innerHTML="4/6";
 
@@ -852,7 +852,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag/adjust the photo&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 4. Drag to adjust the photo&nbsp;&nbsp;&nbsp;";
 document.getElementById("insbanner").style.transform="translate(-150px,210px)";
 
 
@@ -935,7 +935,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.getElementById("insbanner").style.transform="translate(0px,400px)";
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo into the art&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Step 5. Fix the photo in the page&nbsp;&nbsp;&nbsp;";
 
 
 },2000);
@@ -961,7 +961,7 @@ document.documentElement.style.setProperty('--s', s + 'px');
 
 
 document.getElementById("insbanner").style.transform="translate(-420px,390px)";
-document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again if you need&nbsp;&nbsp;&nbsp;";
+document.getElementById("insbanner").innerHTML="&nbsp;&nbsp;&nbsp;Adjust again as you need&nbsp;&nbsp;&nbsp;";
 
 
 
@@ -1475,265 +1475,6 @@ function setbg7(color)
 
 /*input colour functions*/
 
-/*Tutorial*/
-/*var step=1;
-
-function nxslide(){
-if (step==1){
-    
-    document.getElementById("popupimg").setAttribute("src", "img/2.jpg");
-    
-    step=2;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot1").style.backgroundColor="#3a86ff";
-    document.getElementById("previous").style.backgroundColor="#3a86ff";
-    
-}
-else if (step==2){
-
-    document.getElementById("popupimg").setAttribute("src", "img/3.jpg");
-    step=3;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot2").style.backgroundColor="#3a86ff";
-}
-else if (step==3){
-
-    document.getElementById("popupimg").setAttribute("src", "img/4.jpg");
-    step=4;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot3").style.backgroundColor="#3a86ff";
-}
-else if (step==4){
-
-    document.getElementById("popupimg").setAttribute("src", "img/5.jpg");
-    step=5;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot4").style.backgroundColor="#3a86ff";
-}
-else if (step==5){
-
-    document.getElementById("popupimg").setAttribute("src", "img/6.jpg");
-    step=6;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot5").style.backgroundColor="#3a86ff";
-}
-else if (step==6){
-
-    document.getElementById("popupimg").setAttribute("src", "img/7.jpg");
-    step=7;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-  
-    document.getElementById("dot6").style.backgroundColor="#3a86ff";
-}
-else if (step==7){
-
-    document.getElementById("popupimg").setAttribute("src", "img/8.jpg");
-    step=8;
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot7").style.backgroundColor="#2bff01";
-    document.getElementById("next").innerHTML="Close X";
-    document.getElementById("next").style.backgroundColor="red";
-    
-
-}
-else if (step==8){
-
-    
-    document.getElementById("popcontainer").style.top="-300mm";
-    document.getElementById("popdec").style.transform="scale(0)";
-    document.getElementById("popdec").style.opacity="0";
-}
-console.log(step);
-}
-*/
-
-
-//Checkbox
-
-
-
-
-
-/*
-function clicon(){
-    
-    document.getElementById("popcontainer").style.top="-300mm";
-    document.getElementById("popcontainer").style.opacity="0";
-    document.getElementById("clicon").style.opacity="0";
-    document.getElementById("popdec").style.transform="scale(0)";
-    document.getElementById("popdec").style.opacity="0";
-}
-
-*/
-
-
-
-/*
-
-function transit(){
-  document.getElementById("dontshowcheckbox").style.opacity="1";
-  
-  document.getElementById("lab").style.right="0%";
-    document.getElementById("popcontainer").style.top="0mm";
-    document.getElementById("popcontainer").style.opacity="1";
-    document.getElementById("next").style.backgroundColor="#3a86ff";
-    document.getElementById("next").innerHTML="Next >";
-    document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
-    document.getElementById("previous").style.backgroundColor="#a3b6db";
-    document.getElementById("clicon").style.opacity="1";
-    document.getElementById("popdec").style.transform="none";
-    document.getElementById("popdec").style.opacity="1";
-    var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-  document.getElementById("dot").style.backgroundColor="#3a86ff";
-    step=1;
-}
-
-
-/*
-function preslide(){
-    if (step==2){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
-        step=1;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot").style.backgroundColor="#3a86ff";
-        document.getElementById("previous").style.backgroundColor="#a3b6db";
-    }
-    else if (step==3){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/2.jpg");
-        step=2;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot1").style.backgroundColor="#3a86ff";
-    }
-    else if (step==4){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/3.jpg");
-        step=3;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot2").style.backgroundColor="#3a86ff";
-    }
-    else if (step==5){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/4.jpg");
-        step=4;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot3").style.backgroundColor="#3a86ff";
-    }
-    else if (step==6){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/5.jpg");
-        step=5;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot4").style.backgroundColor="#3a86ff";
-    }
-    else if (step==7){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/6.jpg");
-        step=6;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-    document.getElementById("dot5").style.backgroundColor="#3a86ff";
-    }
-    else if (step==8){
-    
-        document.getElementById("popupimg").setAttribute("src", "img/7.jpg");
-        step=7;
-        var x = document.getElementsByClassName("dot");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#a3b6db";
-    x[i].style.border = "none";
-  }
-    
-  document.getElementById("next").innerHTML="Next &gt;";
-    document.getElementById("dot6").style.backgroundColor="green";
-    document.getElementById("next").style.backgroundColor="#3a86ff";
-    }
-    
-    console.log(step);
-    }
 
 /*Custom functions*/
 
